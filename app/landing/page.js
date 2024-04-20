@@ -18,7 +18,7 @@ export default function Landing() {
               alt="Flowbite Logo"
             />
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              GreenWim
+              GreenDotPush
             </span>
           </a>
 
