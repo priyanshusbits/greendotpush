@@ -66,14 +66,14 @@ export default function Main() {
 
       <div className=" mt-20 ml-28  w-full">
         <div className="text-4xl text-center border-1 rounded-md content-center font-roboto font-semibold m-5 ml-38 p-2 ">
-          You have generated <span className="text-green-400">{gwBalance}</span>{" "}
-          GW tokens{" "}
+           &quot; You have generated <span className="text-green-400">{gwBalance}</span>{" "}
+          GW tokens{" "} &quot;
         </div>
 
-        <div className=" rounded-lg w-1/3 ">
+        <div className=" rounded-lg w-1/3 content-center mt-10">
           <label
             for="default-input"
-            className="block mb-2 font-roboto font-medium text-gray-900 dark:text-white mt-2 ml-0 text-3xl"
+            className="block mb-2 font-roboto text-center font-medium text-gray-900 dark:text-white mt-2 ml-0 text-3xl"
           >
             List Sales
           </label>

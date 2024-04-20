@@ -40,7 +40,7 @@ const card = ({ array }) => {
           <div class=" items-center justify-between">
             <button
               onClick={() => buyOrder(Number(array[2]), array[3].toString())}
-              className="text-white bg-yellow-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-8 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-blue-800"
+              className="text-white bg-green-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-8 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800"
             >
               Buy
             </button>
@@ -48,9 +48,9 @@ const card = ({ array }) => {
             {Number(array[8]) > 0 ? (
               <button
                 onClick={() => buyOption(Number(array[2]), array[7].toString())}
-                className="text-white bg-yellow-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-8 py-2.5 text-center dark:bg-yellow-600 dark:hover:bg-yellow-700 dark:focus:ring-blue-800 ml-20"
+                className="text-white bg-green-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-xl text-sm px-8 py-2.5 text-center dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-blue-800 ml-20"
               >
-                Buy OPtion
+                Buy Option
               </button>
             ) : (
               <></>

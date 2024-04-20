@@ -10,8 +10,8 @@ function AddGenSensor() {
   return (
     <>
       <NavBar></NavBar>
-      <div className="mt-40 text-center border w-1/2 ml-96 rounded-lg pt-5 pb-5">
-        <label className="text-3xl" htmlFor="">
+      <div className="mt-40 text-center border-2 w-1/2 ml-96 rounded-lg pt-5 pb-5">
+        <label className="text-3xl font-bold" htmlFor="">
           Enter Secret Code
         </label>
         <br />
