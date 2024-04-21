@@ -1,6 +1,30 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
 
+enum DataLocation {
+    ONCHAIN,
+    ARWEAVE,
+    IPFS,
+    CUSTOM
+}
+
+struct Attestation {
+    uint64 schemaId;
+    uint64 linkedAttestationId;
+    uint64 attestTimestamp;
+    uint64 revokeTimestamp;
+    address attester;
+    uint64 validUntil;
+    DataLocation dataLocation;
+    bool revoked;
+    bytes[] recipients;
+    bytes data;
+}
+
+interface ISP {
+    function getAttestation(uint64 attestationId) external view returns (Attestation memory);
+}
+
 contract Registry {
     struct Order {
         address seller;
